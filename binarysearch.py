@@ -13,8 +13,7 @@ class Solution(object):
 
             low = l
 
-
-            if high >= low:
+            while True:
                 mid = (high + low)//2
 
                 if nums[mid] == target:
@@ -24,8 +23,7 @@ class Solution(object):
                     binarySearch(nums, target, mid, low)
 
                 elif nums[mid] < target:
-                    binarySearch(nums, target, high, mid)
-
+                    binarySearch(nums, target, high, mid
                 
             else:
 
